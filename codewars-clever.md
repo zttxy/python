@@ -23,8 +23,10 @@ def likes(names):
 > ['Alex', 'Jacob', 'Mark']
 > >>> print(*p[:3])
 > Alex Jacob Mark
+> >>> '{}, {}'.format(p[:3])
+> Replacement index 1 out of range for positional args tuple  # 由于第一个括号（索引为0）内传入了整个切片列表，第二个括号（索引为1）缺少可传值，出现报错
 > >>> '{}, {}'.format(*p[:3])
-> 'Alex, Jacob'  # 按顺序填充需要的数量，若 {} 数量多于列表元素，则会报错
+> 'Alex, Jacob'  # 有几个括号就按顺序传入前几个元素，多余的元素不会传入
 > ```
 4. 在此复习`f-string`语法
 > ```python
