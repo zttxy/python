@@ -19,8 +19,8 @@ def likes(names):
 > ```python
 > # 可见如下区分
 > p = ['Alex', 'Jacob', 'Mark', 'Max']
-> >>>print(p[:3])
+> >>> print(p[:3])
 > ['Alex', 'Jacob', 'Mark']
-> >>>print(*p[:3])
+> >>> print(*p[:3])
 > Alex Jacob Mark
 > ```
