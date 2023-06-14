@@ -26,3 +26,9 @@ def likes(names):
 > >>> '{}, {}'.format(*p[:3])
 > 'Alex, Jacob'  # 按顺序填充需要的数量，若`{}`数量多于列表元素，则会报错
 > ```
+4. 在此复习`f-string`语法
+> ```python
+> # f-string 格式化字符串以 f 开头，后面跟着字符串，字符串中的表达式用大括号 {} 包起来，它会将变量或表达式计算后的值替换进去，实例如下：
+> >>> name = 'Runoob'
+> >>> f'Hello {name}'
+> 'Hello Runoob'  # 将变量替换为值
