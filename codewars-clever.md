@@ -23,4 +23,6 @@ def likes(names):
 > ['Alex', 'Jacob', 'Mark']
 > >>> print(*p[:3])
 > Alex Jacob Mark
+> >>> '{}, {}'.format(*p[:3])
+> 'Alex, Jacob'  # 按顺序填充需要的数量，若`{}`数量多于列表元素，则会报错
 > ```
